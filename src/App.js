@@ -1,9 +1,18 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Main from './layout/Main';
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Main></Main>
+    }
+  ])
   return (
-    <div className="App">
-      <h1>Quiz Hero</h1>
+    <div>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }
