@@ -8,7 +8,7 @@ const Topics = () => {
     return (
         <div className='row row-cols-1 row-cols-md-2 row-cols-lg-4 mx-auto w-100'>
             {
-                data.map(topic => <Topic key={data.id} topic={topic}></Topic>)
+                data.map(topic => <Topic key={topic.id} topic={topic}></Topic>)
             }
         </div>
     );
