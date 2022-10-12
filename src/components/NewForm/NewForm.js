@@ -10,7 +10,7 @@ function NewForm({ options, correctAnswer }) {
             showToastMessage('Correct!');
         }
         else {
-            showToastMessage('InCorrect!');
+            showToastMessage('Incorrect!');
         }
     }
 
