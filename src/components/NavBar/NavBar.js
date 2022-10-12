@@ -24,7 +24,6 @@ function NavBar() {
                         <Link className='text-decoration-none text-white me-4' to="/home">Home</Link>
                         <Link className='text-decoration-none text-white me-4' to="/topics">Topics</Link>
                         <Link className='text-decoration-none text-white me-4' to="/statistics">Statistics</Link>
-                        <Link className='text-decoration-none text-white me-4' to="/about">About</Link>
                         <Link className='text-decoration-none text-white me-4' to="/blog">Blog</Link>
                     </Nav>
                 </Navbar.Collapse>

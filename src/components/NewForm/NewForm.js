@@ -1,7 +1,7 @@
 import Form from 'react-bootstrap/Form';
 
 function NewForm({ options }) {
-    console.log(options);
+    // console.log(options);
     return (
         <Form>
             <fieldset>
