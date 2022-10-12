@@ -21,10 +21,10 @@ function NavBar() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto">
-                        <Link className='text-decoration-none text-white me-4' to="/home">Home</Link>
-                        <Link className='text-decoration-none text-white me-4' to="/topics">Topics</Link>
-                        <Link className='text-decoration-none text-white me-4' to="/statistics">Statistics</Link>
-                        <Link className='text-decoration-none text-white me-4' to="/blog">Blog</Link>
+                        <Link className='text-decoration-none fw-semibold text-white me-4' to="/home">Home</Link>
+                        <Link className='text-decoration-none fw-semibold text-white me-4' to="/topics">Topics</Link>
+                        <Link className='text-decoration-none fw-semibold text-white me-4' to="/statistics">Statistics</Link>
+                        <Link className='text-decoration-none fw-semibold text-white me-4' to="/blog">Blog</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

@@ -55,8 +55,8 @@ function App() {
         }
       ],
     },
-    { path: '*', element: <NotFound></NotFound> },
-  ])
+    { path: '*', element: <NotFound></NotFound> }
+  ]);
   return (
     <div>
       <RouterProvider router={router}></RouterProvider>
