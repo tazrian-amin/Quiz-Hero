@@ -5,7 +5,7 @@ const Question = ({ singleQuestion }) => {
     const { options, question, correctAnswer } = singleQuestion;
     return (
         <div className='mb-4'>
-            <div className='bg-danger bg-gradient m-2 p-4 text-white border border-3 border-dark rounded'>
+            <div className='bg-dark bg-gradient m-2 p-4 text-white border border-3 border-dark rounded'>
                 <h5 className='pb-2'>Question: {question}</h5>
                 <NewForm options={options}></NewForm>
             </div>
