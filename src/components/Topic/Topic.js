@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Topic = ({ topic }) => {
+
     const { id, name, logo, total } = topic;
+
     return (
         <div className='col'>
             <div className='text-center text-white border border-3 border-dark rounded bg-danger bg-gradient py-2 my-4'>

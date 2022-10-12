@@ -7,6 +7,7 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { showToastMessage } from '../../utilities/utilities';
 
 const Question = ({ singleQuestion }) => {
+
     const { options, question, correctAnswer } = singleQuestion;
 
     return (
