@@ -26,7 +26,7 @@ function NavBar() {
                         {
                             navLinks.map((navLink, idx) => <NavLink
                                 key={idx}
-                                className={`${({ isActive }) => isActive ? 'active' : undefined} text-decoration-none text-white fw-semibold me-4`}
+                                className={`${({ isActive }) => isActive ? 'active' : undefined} text-decoration-none text-white px-2 py-1 fw-semibold me-4`}
                                 to={navLink.toLowerCase()}
                             >{navLink}</NavLink>)
                         }
