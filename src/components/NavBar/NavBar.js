@@ -2,9 +2,11 @@ import logo from '../../logo.svg';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import './NavBar.css';
 
 function NavBar() {
+    const navLinks = ['Home', 'Topics', 'Statistics', 'Blog'];
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
@@ -21,10 +23,13 @@ function NavBar() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto">
-                        <Link className='text-decoration-none fw-semibold text-white me-4' to="/home">Home</Link>
-                        <Link className='text-decoration-none fw-semibold text-white me-4' to="/topics">Topics</Link>
-                        <Link className='text-decoration-none fw-semibold text-white me-4' to="/statistics">Statistics</Link>
-                        <Link className='text-decoration-none fw-semibold text-white me-4' to="/blog">Blog</Link>
+                        {
+                            navLinks.map((navLink, idx) => <NavLink
+                                key={idx}
+                                className={`${({ isActive }) => isActive ? 'active' : undefined} text-decoration-none text-white fw-semibold me-4`}
+                                to={navLink.toLowerCase()}
+                            >{navLink}</NavLink>)
+                        }
                     </Nav>
                 </Navbar.Collapse>
             </Container>
